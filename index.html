@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Quick hashtags search</title>
+      <script src="script.js"></script>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="jumbotron">
+            <h2>Quick hashtags and keywords search</h2>
+            <p>
+               This simple tool helps save a lot of time when gathering information on social networks. Enter your search query once and click the buttons with the names of social media platforms, to quickly jump to pages to find posts that match your query.
+            </p>
+            <p>
+               So far there are only 70 search sites collected here, but I plan to add more in the near future. Follow the news <a href="https://twitter.com/Ivan30394639?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Ivan30394639</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
+            <form>
+               <div class="form-group">
+                  <label for="email">Enter hashtag (start with #) or keyword(s):</label>
+                  <input type="text" class="form-control" value="love" id="searchquery">
+               </div>
+            </form>
+            <p>
+               <button type="button" onclick="buttonOpen('Facebook')" style="background-color:#4267B2;color:white" class="btn-link">Facebook</button>
+               <button type="button" onclick="buttonOpen('Instagram')"  style="background-color:#C13584;color:white" class="btn-link">Instagram (hashtags only)</button>
+               <button type="button" onclick="buttonOpen('Twitter')"  style="background-color:#1DA1F2;color:white" class="btn-link">Twitter</button>
+               <button type="button" onclick="buttonOpen('Pinterest')"  style="background-color:#e9463b;color:white" class="btn-link">Pinterest</button>
+               <button type="button" onclick="buttonOpen('Tumblr')"  style="background-color:#001936;color:white" class="btn-link">Tumblr</button>
+               <button type="button" onclick="buttonOpen('Myspace')"  style="background-color:#00349d;color:white" class="btn-link">MySpace</button>
+            </p>
+            <h4>Video and streaming</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Tiktok')"  style="background-color:white;color:black" class="btn-link">TikTok</button> 
+               <button type="button" onclick="buttonOpen('Vimeo')"  style="background-color:#24aeee;color:white" class="btn-link">Vimeo</button>
+               <button type="button" onclick="buttonOpen('Snapchat')"  style="background-color:#fef966;color:black" class="btn-link">Snapchat (keywords only)</button> 
+               <button type="button" onclick="buttonOpen('Youtube')"  style="background-color:#f84a3f;color:white" class="btn-link">YouTube</button>
+               <button type="button" onclick="buttonOpen('Twitch')"  style="background-color:#9246f1;color:white" class="btn-link">Twitch</button>
+               <button type="button" onclick="buttonOpen('Thriller')"  style="background-color:#ffffff;color:#000000" class="btn-link">Thriller.co</button>
+               <button type="button" onclick="buttonOpen('Likee')"  style="background-color:#ffffff;color:#000000" class="btn-link">Likee</button>
+            </p>
+            <h4>Blogs and news</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Reddit')"  style="background-color:#f84a3f;color:white" class="btn-link">Reddit</button>
+               <button type="button" onclick="buttonOpen('Medium')"  style="background-color:#0b0605;color:white" class="btn-link">Medium</button>
+               <button type="button" onclick="buttonOpen('Fark')"  style="background-color:#555654;color:#7271a4" class="btn-link">Fark</button>
+               <button type="button" onclick="buttonOpen('Digg')"  style="background-color:white;color:black" class="btn-link">Digg</button> 
+               <button type="button" onclick="buttonOpen('Hubpages')"  style="background-color:white;color:black" class="btn-link">Hub Pages</button> 
+               <button type="button" onclick="buttonOpen('Slashdots')"  style="background-color:#196565;color:white" class="btn-link">SlashDots</button> 
+            </p>
+            <h4>Sound and music</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Clubhouse')"  style="background-color:#050207;color:white" class="btn-link">ClubHouse (clubhousedb.com)</button>
+               <button type="button" onclick="buttonOpen('Reverbnation')"  style="background-color:#0c0c0e;color:#e8453b" class="btn-link">Reverb Nation</button>  
+               <button type="button" onclick="buttonOpen('Soundcloud')"  style="background-color:#f84a3f;color:white" class="btn-link">Sound Cloud</button> 
+               <button type="button" onclick="buttonOpen('Lastfm')"  style="background-color:black;color:#bb362e" class="btn-link">Last.fm</button> 
+               <button type="button" onclick="buttonOpen('Bandcamp')"  style="background-color:#269fc3;color:#35312e" class="btn-link">BandCamp</button> 
+            </p>
+            <h4>Art and photos</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Devianart')"  style="background-color:#06070d;color:#47d59d" class="btn-link">Devianart</button>
+               <button type="button" onclick="buttonOpen('Piscart')"  style="background-color:white;color:#b844bd" class="btn-link">Picsart</button> 
+               <button type="button" onclick="buttonOpen('Dribbble')"  style="background-color:white;color:black" class="btn-link">Dribbble</button> 
+               <button type="button" onclick="buttonOpen('Houzz')"  style="background-color:white;color:#4bbe3f" class="btn-link">Houzz (keywords only)</button> 
+               <button type="button" onclick="buttonOpen('Dronestagram')"  style="background-color:white;color:#e84648" class="btn-link">Dronestagram</button> 
+               <button type="button" onclick="buttonOpen('Shutterfly')"  style="background-color:#f2543f;color:white" class="btn-link">Shutterfly</button> 
+               <button type="button" onclick="buttonOpen('Flickr')"  style="background-color:#1c2222;color:white" class="btn-link">Flickr</button> 
+               <button type="button" onclick="buttonOpen('Fotki')"  style="background-color:#9babd5;color:white" class="btn-link">Fotki.com</button> 
+               <button type="button" onclick="buttonOpen('Ello')"  style="background-color:white;color:black" class="btn-link">Ello</button> 
+               <button type="button" onclick="buttonOpen('Eyeem')"  style="background-color:black;color:white" class="btn-link">Eyeem (keywords only)</button> 
+            </p>
+            <h4>Literature</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Wattpad')"  style="background-color:#fffeff;color:#f66743" class="btn-link">Wattpad.com</button> 
+            </p>
+            <h4>Questions</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Quora')"  style="background-color:white;color:#ab322a" class="btn-link">Quora</button> 
+               <button type="button" onclick="buttonOpen('Steemit')"  style="background-color:white;color:#42d2a9" class="btn-link">Steemit</button> 
+            </p>
+            <h4>Business</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Producthunt')"  style="background-color:#d75739;color:white" class="btn-link">Product Hunt</button> 
+               <button type="button" onclick="buttonOpen('Kikstarter')"  style="background-color:white;color:#44cd79" class="btn-link">Kikstarter</button> 
+               <button type="button" onclick="buttonOpen('Gofundme')"  style="background-color:white;color:#36a25e" class="btn-link">GoFundMe</button> 
+            </p>
+            <h4>Advertisment</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Girlsaskguys')"  style="background-color:#693ab7;color:#144d85" class="btn-link">GirlsAskGuys</button> 
+               <button type="button" onclick="buttonOpen('Howcast')"  style="background-color:#1e94e0;color:white" class="btn-link">HowCast</button> 
+               <button type="button" onclick="buttonOpen('Letterboxd')"  style="background-color:#35312e;color:white" class="btn-link">LetterBoxd</button> 
+               <button type="button" onclick="buttonOpen('Funnyordie')"  style="background-color:black;color:#fee360" class="btn-link">FunnyOrDie</button> 
+               <button type="button" onclick="buttonOpen('Kroogi')"  style="background-color:#000000;color:#6bb2de" class="btn-link">Kroogi</button> 
+               <button type="button" onclick="buttonOpen('Catster')"  style="background-color:white;color:#4170b3" class="btn-link">Catster</button> 
+               <button type="button" onclick="buttonOpen('Dogster')"  style="background-color:white;color:#3ccdcd" class="btn-link">Dogster</button> 
+               <button type="button" onclick="buttonOpen('Bucketlist')"  style="background-color:#3d9bdc;color:white" class="btn-link">BucketList</button> 
+            </p>
+            <h4>Europe</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Miarroba')"  style="background-color:#f5dc87;color:white" class="btn-link">Miarroba (Spain)</button>
+               <button type="button" onclick="buttonOpen('Skyrock')"  style="background-color:#1199f2;color:#010000" class="btn-link">Skyrock (France)</button> 
+               <button type="button" onclick="buttonOpen('Wizelife')"  style="background-color:#2a3e57;color:white" class="btn-link">Wize.life (Germany)</button> 
+            </p>
+            <h4>Russia</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Yandexzen')"  style="background-color:#33363f;color:white" class="btn-link">YandexZen</button>
+               <button type="button" onclick="buttonOpen('Vkontakte')"  style="background-color:#2787F5;color:white" class="btn-link">Vkontakte</button>
+               <button type="button" onclick="buttonOpen('myMail')"  style="background-color:#0b5ef0;color:#fb9e4f" class="btn-link">My.Mail.ru (hashtags only)</button>
+               <button type="button" onclick="buttonOpen('Telegram')"  style="background-color:#2f9add;color:white" class="btn-link">Telegram (lyzem.com)</button>
+               <button type="button" onclick="buttonOpen('Livejournal')"  style="background-color:#fefffe;color:#0b2f59" class="btn-link">Livejournal (hashtags only)</button>
+            </p>
+            <h4>Asia</h4>
+            <p>
+               <button type="button" onclick="buttonOpen('Zhihu')"  style="background-color:white;color:#1e65e5" class="btn-link">Zhihu</button> 
+               <button type="button" onclick="buttonOpen('Toutiao')"  style="background-color:#f34946;color:white" class="btn-link">Toutiao</button> 
+               <button type="button" onclick="buttonOpen('Hatena')"  style="background-color:#0b8bf2;color:white" class="btn-link">Hatena</button> 
+               <button type="button" onclick="buttonOpen('Ameba')"  style="background-color:#2f8d3d;color:white" class="btn-link">Ameba</button> 
+               <button type="button" onclick="buttonOpen('Bilibili')"  style="background-color:#21a1d7;color:white" class="btn-link">BiliBili</button> 
+               <button type="button" onclick="buttonOpen('Ixigua')"  style="background-color:#f74b56;color:white" class="btn-link">Ixigua</button> 
+               <button type="button" onclick="buttonOpen('Huya')"  style="background-color:#f98448;color:white" class="btn-link">Huya</button> 
+               <button type="button" onclick="buttonOpen('Meipai')"  style="background-color:#f555a1;color:white" class="btn-link">Meipai</button> 
+               <button type="button" onclick="buttonOpen('Douyin')"  style="background-color:white;color:black" class="btn-link">Douyin</button> 
+               <button type="button" onclick="buttonOpen('Kuaishou')"  style="background-color:#f74c67;color:white" class="btn-link">Kuaishou</button> 
+               <button type="button" onclick="buttonOpen('Douban')"  style="background-color:#eef4ec;color:#388f3b" class="btn-link">Douban</button> 
+               <button type="button" onclick="buttonOpen('Baidutieba')"  style="background-color:#2734dd;color:white" class="btn-link">Baidu Tieba</button>
+               <button type="button" onclick="buttonOpen('Weibo')"  style="background-color:#ea9348;color:#050000" class="btn-link">Sina Weibo</button>
+               <button type="button" onclick="buttonOpen('Yycom')"  style="background-color:#0f79bf;color:#e3d270" class="btn-link">YY.com</button>
+            </p>
+         </div>
+      </div>
+      <div class="well">
+         <a  class="btn btn-danger" role="button" href="https://cipher387.github.io/osint_stuff_tool_collection/">371 OSINT tools</a>
+         <a href="https://twitter.com/Ivan30394639?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Ivan30394639</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+   </body>
+</html>
