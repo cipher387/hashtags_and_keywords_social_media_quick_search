@@ -89,6 +89,7 @@ function hashtagSearch(searchquery, buttonValue)
     links["Toutiao"] = "https://m.toutiao.com/search?keyword=%23" + hashtag;
     links["Partyflock"] = "https://partyflock.nl/search?enc=%F0%9F%A5%B0&TERMS="+hashtag+"&ELEMENT=";
     links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/%23"+hashtag;
+    links["Flixster"] = "https://www.flixster.com/#search=%23"+hashtag;
     window.open(links[buttonValue]);
 }
 
@@ -168,7 +169,8 @@ function keywordSearch(searchquery, buttonValue)
     links["Zhihu"] = "https://www.zhihu.com/search?type=content&q=" + searchquery;
     links["Toutiao"] = "https://m.toutiao.com/search?keyword=" + searchquery;
     links["Partyflock"] = "https://partyflock.nl/search?enc=%F0%9F%A5%B0&TERMS="+searchquery+"&ELEMENT=";
-    links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/"+hashtag;
+    links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/"+searchquery;
+    links["Flixster"] = "https://www.flixster.com/#search="+searchquery;
     window.open(links[buttonValue]);
 
 
