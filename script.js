@@ -90,6 +90,7 @@ function hashtagSearch(searchquery, buttonValue)
     links["Partyflock"] = "https://partyflock.nl/search?enc=%F0%9F%A5%B0&TERMS="+hashtag+"&ELEMENT=";
     links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/%23"+hashtag;
     links["Flixster"] = "https://www.flixster.com/#search=%23"+hashtag;
+    links["Blurtit"] = "https://www.blurtit.com/search/?search-query=%23"+hashtag+"&filter=all_activity";
     window.open(links[buttonValue]);
 }
 
@@ -171,6 +172,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Partyflock"] = "https://partyflock.nl/search?enc=%F0%9F%A5%B0&TERMS="+searchquery+"&ELEMENT=";
     links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/"+searchquery;
     links["Flixster"] = "https://www.flixster.com/#search="+searchquery;
+    links["Blurtit"] = "https://www.blurtit.com/search/?search-query="+searchquery+"&filter=all_activity";
     window.open(links[buttonValue]);
 
 
