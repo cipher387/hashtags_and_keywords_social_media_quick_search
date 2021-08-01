@@ -91,6 +91,10 @@ function hashtagSearch(searchquery, buttonValue)
     links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/%23"+hashtag;
     links["Flixster"] = "https://www.flixster.com/#search=%23"+hashtag;
     links["Blurtit"] = "https://www.blurtit.com/search/?search-query=%23"+hashtag+"&filter=all_activity";
+    links["Answerscom"] = "https://www.answers.com/search?q=%23"+hashtag;
+    links["Funadvice"] = "https://www.funadvice.com/advice/"+hashtag;
+    links["Theanswersbank"] = "https://www.theanswerbank.co.uk/search/?q1=%23"+hashtag;
+    links["Askdeb"] = "https://www.askdeb.com/index.php?s=%23"+hashtag;
     window.open(links[buttonValue]);
 }
 
@@ -173,6 +177,11 @@ function keywordSearch(searchquery, buttonValue)
     links["Networkhu"] = "http://network.hu/kereses/kozosseg/q/"+searchquery;
     links["Flixster"] = "https://www.flixster.com/#search="+searchquery;
     links["Blurtit"] = "https://www.blurtit.com/search/?search-query="+searchquery+"&filter=all_activity";
+    links["Answerscom"] = "https://www.answers.com/search?q="+searchquery;
+    links["Funadvice"] = "https://www.funadvice.com/advice/"+searchquery;
+    links["Theanswersbank"] = "https://www.theanswerbank.co.uk/search/?q1="+searchquery;
+    links["Askdeb"] = "https://www.askdeb.com/index.php?s="+searchquery;
+
     window.open(links[buttonValue]);
 
 
