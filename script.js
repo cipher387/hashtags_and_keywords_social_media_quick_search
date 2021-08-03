@@ -95,6 +95,7 @@ function hashtagSearch(searchquery, buttonValue)
     links["Funadvice"] = "https://www.funadvice.com/advice/"+hashtag;
     links["Theanswersbank"] = "https://www.theanswerbank.co.uk/search/?q1=%23"+hashtag;
     links["Askdeb"] = "https://www.askdeb.com/index.php?s=%23"+hashtag;
+    links["Superuser"] = "https://superuser.com/search?q=+%23"+hashtag;
     window.open(links[buttonValue]);
 }
 
@@ -102,7 +103,6 @@ function keywordSearch(searchquery, buttonValue)
 
 {
     const links = [];
-    hashtag = searchquery;
     links["Facebook"] = "https://www.facebook.com/search/top?q=" + searchquery;
     links["Instagram"] = "https://www.instagram.com/explore/tags/" + searchquery;
     links["Vkontakte"] = "https://vk.com/search?c%5Bper_page%5D=40&c%5Bq%5D=" + searchquery + "&c%5Bsection%5D=auto";
@@ -137,7 +137,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Quora"] = "https://www.quora.com/search?q=" + searchquery;
     links["Tiktok"] = "https://www.tiktok.com/search?q=" + searchquery;
     links["Vimeo"] = "https://vimeo.com/search?q=" + searchquery;
-    links["Douban"] = "https://www.douban.com/search?source=suggest&q=%23" + hashtag;
+    links["Douban"] = "https://www.douban.com/search?source=suggest&q=%23" + searchquery;
     links["Douyin"] = "https://www.douyin.com/search/" + searchquery + "?source=normal_search&aid=ae28cade-2fa5-4e16-bc8f-7f06ead531b2&enter_from=main_page";
     links["Kuaishou"] = "https://www.kuaishou.com/search/video?searchKey=" + searchquery;
     links["Piscart"] = "https://picsart.com/search?q=" + searchquery;
@@ -181,6 +181,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Funadvice"] = "https://www.funadvice.com/advice/"+searchquery;
     links["Theanswersbank"] = "https://www.theanswerbank.co.uk/search/?q1="+searchquery;
     links["Askdeb"] = "https://www.askdeb.com/index.php?s="+searchquery;
+    links["Superuser"] = "https://superuser.com/search?q=+"+searchquery;
 
     window.open(links[buttonValue]);
 
