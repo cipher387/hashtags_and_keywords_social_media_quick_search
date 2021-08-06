@@ -96,6 +96,7 @@ function hashtagSearch(searchquery, buttonValue)
     links["Theanswersbank"] = "https://www.theanswerbank.co.uk/search/?q1=%23"+hashtag;
     links["Askdeb"] = "https://www.askdeb.com/index.php?s=%23"+hashtag;
     links["Superuser"] = "https://superuser.com/search?q=+%23"+hashtag;
+    links["Askubuntu"] = "https://askubuntu.com/search?q=%23"+hashtag;
     window.open(links[buttonValue]);
 }
 
@@ -182,6 +183,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Theanswersbank"] = "https://www.theanswerbank.co.uk/search/?q1="+searchquery;
     links["Askdeb"] = "https://www.askdeb.com/index.php?s="+searchquery;
     links["Superuser"] = "https://superuser.com/search?q=+"+searchquery;
+    links["Askubuntu"] = "https://askubuntu.com/search?q=%23"+searchquery;
 
     window.open(links[buttonValue]);
 
