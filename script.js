@@ -98,6 +98,7 @@ function hashtagSearch(searchquery, buttonValue)
     links["Superuser"] = "https://superuser.com/search?q=+%23"+hashtag;
     links["Askubuntu"] = "https://askubuntu.com/search?q=%23"+hashtag;
     links["Pixiv"] = "https://www.pixiv.net/en/tags/"+hashtag;
+    links["Discogs"] = "https://www.discogs.com/search/?q=%23"+hashtag+"&type=all";
     window.open(links[buttonValue]);
 }
 
@@ -186,6 +187,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Superuser"] = "https://superuser.com/search?q=+"+searchquery;
     links["Askubuntu"] = "https://askubuntu.com/search?q=%23"+searchquery;
     links["Pixiv"] = "https://www.pixiv.net/en/tags/"+searchquery;
+    links["Discogs"] = "https://www.discogs.com/search/?q="+searchquery+"&type=all";
 
     window.open(links[buttonValue]);
 
