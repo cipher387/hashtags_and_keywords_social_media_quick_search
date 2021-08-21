@@ -102,6 +102,7 @@ function hashtagSearch(searchquery, buttonValue)
     links["Youpic"] = "https://youpic.com/newest/tag/"+hashtag;
     links["Behance"] = "https://www.behance.net/?tracking_source=typeahead_search_direct&search=%23"+hashtag;
     links["Unsplash"] = "https://unsplash.com/s/photos/%23"+hashtag;
+    links["Metacafe"] = "https://www.metacafe.com/videos_about/%23"+hashtag;
     window.open(links[buttonValue]);
 }
 
@@ -194,6 +195,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Youpic"] = "https://youpic.com/newest/tag/"+searchquery;
     links["Behance"] = "https://www.behance.net/?tracking_source=typeahead_search_direct&search=%23"+searchquery;
     links["Unsplash"] = "https://unsplash.com/s/photos/"+searchquery;
+    links["Metacafe"] = "https://www.metacafe.com/videos_about/"+searchquery;
     window.open(links[buttonValue]);
 
 
