@@ -103,6 +103,9 @@ function hashtagSearch(searchquery, buttonValue)
     links["Behance"] = "https://www.behance.net/?tracking_source=typeahead_search_direct&search=%23"+hashtag;
     links["Unsplash"] = "https://unsplash.com/s/photos/%23"+hashtag;
     links["Metacafe"] = "https://www.metacafe.com/videos_about/%23"+hashtag;
+    links["Patreon"] ="https://www.patreon.com/search?q=%23"+hashtag;
+    links["KoFi"] ="https://ko-fi.com/Home/featured?search=%23"+hashtag;
+    links["Liberapay"] ="https://liberapay.com/search?q=%23"+hashtag;
     window.open(links[buttonValue]);
 }
 
@@ -196,6 +199,10 @@ function keywordSearch(searchquery, buttonValue)
     links["Behance"] = "https://www.behance.net/?tracking_source=typeahead_search_direct&search=%23"+searchquery;
     links["Unsplash"] = "https://unsplash.com/s/photos/"+searchquery;
     links["Metacafe"] = "https://www.metacafe.com/videos_about/"+searchquery;
+    links["Patreon"] ="https://www.patreon.com/search?q="+searchquery;
+    links["KoFi"] ="https://ko-fi.com/Home/featured?search="+searchquery;
+    links["Liberapay"] ="https://liberapay.com/search?q="+searchquery;
+    
     window.open(links[buttonValue]);
 
 
