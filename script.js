@@ -198,7 +198,7 @@ function keywordSearch(searchquery, buttonValue)
     links["Youpic"] = "https://youpic.com/newest/tag/"+searchquery;
     links["Behance"] = "https://www.behance.net/?tracking_source=typeahead_search_direct&search=%23"+searchquery;
     links["Unsplash"] = "https://unsplash.com/s/photos/"+searchquery;
-    links["Metacafe"] = "https://www.metacafe.com/videos_about/"+searchquery;
+    links["Videoshub"] = "https://videoshub.com/search?q="+searchquery;
     links["Patreon"] ="https://www.patreon.com/search?q="+searchquery;
     links["KoFi"] ="https://ko-fi.com/Home/featured?search="+searchquery;
     links["Liberapay"] ="https://liberapay.com/search?q="+searchquery;
