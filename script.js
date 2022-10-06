@@ -1,3 +1,15 @@
+window.addEventListener('load', (event) => {
+
+  const queryString = window.location.search;
+  document.getElementById("searchquery").value=queryString.replace("?text=","");
+  
+});
+
+
+
+
+
+
 function buttonOpen(buttonValue) {
 
     searchquery = document.getElementById("searchquery").value;
