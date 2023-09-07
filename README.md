@@ -6,4 +6,4 @@ Explore this project at https://cipher387.github.io/hashtags_and_keywords_social
 <hr>
 
 
-Thank you for following me! [@cyb_detective](https://linktr.ee/cyb_detective)
+Thank you for following me! https://cybdetective.com
